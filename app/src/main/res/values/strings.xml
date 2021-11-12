@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ExercisePatternSQL</string>
+    <string name="buttonContinue">Continuar</string>
+
+    <string-array name="SQL_array">
+        <item>SQLServer</item>
+        <item>Oracle</item>
+        <item>PostgreSQL</item>
+        <item>MySQL</item>
+    </string-array>
+
+</resources>
