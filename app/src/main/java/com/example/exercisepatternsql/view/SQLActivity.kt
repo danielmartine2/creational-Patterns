@@ -1,11 +1,13 @@
-package com.example.exercisepatternsql
+package com.example.exercisepatternsql.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
-
-
+import com.example.exercisepatternsql.IO.ISQL
+import com.example.exercisepatternsql.R
+import com.example.exercisepatternsql.SQLFactory
+import com.example.exercisepatternsql.domain.enums.SQLType
 
 
 class SQLActivity : AppCompatActivity() {
@@ -21,7 +23,7 @@ class SQLActivity : AppCompatActivity() {
         connectSQL = when (db) {
             SQLType.PostgreSQL.name -> SQLFactory.getSQL(SQLType.PostgreSQL)
             SQLType.MySQL.name -> SQLFactory.getSQL(SQLType.MySQL)
-            SQLType.PostgreSQL.name -> SQLFactory.getSQL(SQLType.PostgreSQL)
+            SQLType.SQLServer.name -> SQLFactory.getSQL(SQLType.SQLServer)
             SQLType.Oracle.name -> SQLFactory.getSQL(SQLType.Oracle)
             else -> null
         }

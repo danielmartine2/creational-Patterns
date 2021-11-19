@@ -1,10 +1,11 @@
-package com.example.exercisepatternsql
+package com.example.exercisepatternsql.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
+import com.example.exercisepatternsql.R
 
 
 class MainActivity : AppCompatActivity() , AdapterView.OnItemSelectedListener {

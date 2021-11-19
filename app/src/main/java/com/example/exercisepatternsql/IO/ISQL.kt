@@ -1,4 +1,4 @@
-package com.example.exercisepatternsql
+package com.example.exercisepatternsql.IO
 
 interface ISQL {
     fun open(): String
